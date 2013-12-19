@@ -1,0 +1,29 @@
+.comefemerides-main{
+  text-align: justify;
+}
+
+.comefemerides-content{
+  width: 100%;
+}
+
+.comefemerides-head p
+{  
+  float:left;  
+  width: 33%;
+}
+
+.comefemerides-list p
+{
+  float:left;
+  width: 33%;
+}
+
+.comefemerides-head
+{
+  font-weight: bold;
+}
+
+.comefemerides-historicdate
+{
+  clear:both;
+}
