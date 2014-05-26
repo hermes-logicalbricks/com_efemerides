@@ -7,6 +7,8 @@ class EfemeridesController extends JControllerLegacy
   {
     $document = JFactory::getDocument();
 
+    $id = $this->input->getInt('id');
+
     $viewName = $this->input->get('view','events');
     $this->input->set('view', $viewName);
 

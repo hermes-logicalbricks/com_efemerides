@@ -26,8 +26,11 @@
     <folder>models</folder>
   </files>
 
+  <languages folder="site/language">
+  </languages>
+
   <administration>
-    <menu>com_efemerides</menu>
+    <menu>COM_EFEMERIDES</menu>
     <submenu>
     </submenu>
 
