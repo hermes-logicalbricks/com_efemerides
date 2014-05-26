@@ -1,4 +1,6 @@
 <?php
 defined('_JEXEC') or die;
-?>
-<h2>Starting Efemerides for Joomla 3 rebuild</h2>
+
+$controller = JControllerLegacy::getInstance('Efemerides');
+$controller->execute(JFactory::getApplication()->input->get('task'));
+$controller->redirect();
