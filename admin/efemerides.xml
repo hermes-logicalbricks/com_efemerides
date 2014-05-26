@@ -35,6 +35,9 @@
       <filename>efemerides.php</filename>
       <filename>index.html</filename>
       <folder>sql</folder>
+      <filename>controller.php</filename>
+      <folder>views</folder>
+      <folder>models</folder>
     </files>
   </administration>
 </extension>
