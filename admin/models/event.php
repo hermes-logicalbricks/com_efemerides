@@ -39,4 +39,9 @@ class EfemeridesModelEvent extends JModelAdmin
     }
     return $data;
   }
+
+  public function getTable($type = 'Event', $prefix = 'EfemeridesTable', $config = array())
+  {
+    return JTable::getInstance($type, $prefix, $config);
+  }
 }

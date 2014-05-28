@@ -13,6 +13,23 @@ class EfemeridesViewEvent extends JViewLegacy
       return false;
     }
 
+    $this->addToolbar();
+
     parent::display($tpl);
+  }
+
+  protected function addToolbar()
+  {
+    JFactory::getApplication()->input->set('hidemainmenu', true);
+
+    $isNew = ($this->event->id == 0);
+
+    JToolbarHelper::title(JText::_('COM_EFEMERIDES_MANAGER_EVENT'), 'event.png');
+
+    JToolbarHelper::apply('event.apply');
+    JToolbarHelper::save('event.save');
+    JToolbarHelper::cancel('event.cancel');
+    JToolbarHelper::divider();
+    JToolbarHelper::help('JHELP_COMPONENTS_EFEMERIDES_EVENT_EDIT');
   }
 }

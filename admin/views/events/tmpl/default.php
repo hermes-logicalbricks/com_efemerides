@@ -29,12 +29,12 @@ defined('_JEXEC') or die;
               <?php echo JHtml::_('grid.id', $i, $event->id); ?>
             </td>
             <td class="nowrap">
-              <a href="<?php echo JRoute::_('index.php?option=com_efemerides&view=event&layout=edit&id='.(int) $event->id); ?>">
+              <a href="<?php echo JRoute::_('index.php?option=com_efemerides&task=event.edit&view=event&layout=edit&id='.(int) $event->id); ?>">
                 <?php echo $this->escape($event->historicdate); ?>
               </a>
             </td>
             <td class="nowrap">
-              <a href="<?php echo JRoute::_('index.php?option=com_efemerides&view=event&layout=edit&id='.(int) $event->id); ?>">
+              <a href="<?php echo JRoute::_('index.php?option=com_efemerides&task=event.edit&view=event&layout=edit&id='.(int) $event->id); ?>">
                 <?php echo $this->escape($event->title); ?>
               </a>
             </td>

@@ -1,6 +1,23 @@
 <?php
 defined('_JEXEC') or die;
+
+JHtml::_('behavior.tooltip');
+JHtml::_('behavior.formvalidation');
 ?>
+
+<script type="text/javascript">
+Joomla.submitbutton = function(task)
+  {
+    if (task == 'event.cancel' || document.formvalidator.isValid(document.id('efemerides-event-form')))  {
+      <?php echo $this->form->getField('description')->save(); ?>
+      Joomla.submitform(task, document.getElementById('efemerides-event-form'));
+    }
+    else {
+      alert('<?php echo $this->escape(JText::_('JGLOBAL_VALIDATION_FORM_FAILED')); ?>');
+   }
+  }
+</script>
+
 
 <form action="<?php echo JRoute::_('index.php?option=com_efemerides&layout=edit&id='.(int) $this->event->id); ?>" method="post" name="adminForm" id="efemerides-event-form" class="form-validate">
   <div class="row-fluid">
