@@ -22,7 +22,7 @@ class EfemeridesViewEvent extends JViewLegacy
   {
     JFactory::getApplication()->input->set('hidemainmenu', true);
 
-    $isNew = ($this->event->id == 0);
+    $isNew = empty($this->event->id);
 
     JToolbarHelper::title(JText::_('COM_EFEMERIDES_MANAGER_EVENT'), 'event.png');
 

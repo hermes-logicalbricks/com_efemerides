@@ -8,6 +8,10 @@ class EfemeridesModelEvent extends JModelAdmin
     $app = JFactory::getApplication('site');
     $id = $app->input->getInt('id');
 
+    if (empty($id)){
+      return $data;
+    }
+
     $db = JFactory::getDBO();
     $query = $db->getQuery(true);
     $query->select('id,historicdate,title,description');

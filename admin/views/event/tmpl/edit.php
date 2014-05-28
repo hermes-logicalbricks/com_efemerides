@@ -18,8 +18,10 @@ Joomla.submitbutton = function(task)
   }
 </script>
 
-
-<form action="<?php echo JRoute::_('index.php?option=com_efemerides&layout=edit&id='.(int) $this->event->id); ?>" method="post" name="adminForm" id="efemerides-event-form" class="form-validate">
+<?php
+  $id = empty($this->event->id) ? 0 : $this->event->id;
+?>
+<form action="<?php echo JRoute::_('index.php?option=com_efemerides&layout=edit&id='.(int) $id); ?>" method="post" name="adminForm" id="efemerides-event-form" class="form-validate">
   <div class="row-fluid">
     <div class="span10 form-horizontal">
 

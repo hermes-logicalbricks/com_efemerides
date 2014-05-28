@@ -21,7 +21,12 @@ defined('_JEXEC') or die;
             <?php echo JText::_('JGRID_HEADING_ID') ?>
           </th>
         </tr>
-      <thead>
+      </thead>
+      <tfoot>
+        <tr>
+          <td colspan="9"><?php echo $this->pagination->getListFooter(); ?></td>
+        </tr>
+      </tfoot>
       <tbody>
         <?php foreach ($this->events as $i => $event) { ?>
           <tr class="row<?php echo $i % 2; ?>">
@@ -47,6 +52,7 @@ defined('_JEXEC') or die;
     </table>
     <input type="hidden" name="task" value="" />
     <input type="hidden" name="boxchecked" value="0" />
+    <input type="hidden" name="view" value="events" />
     <?php echo JHtml::_('form.token'); ?>
   </div>
 </form>
