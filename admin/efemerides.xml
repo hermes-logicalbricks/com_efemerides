@@ -45,7 +45,7 @@
       <folder>controllers</folder>
     </files>
 
-    <languages folder="site/language">
+    <languages folder="admin/language">
       <language tag="en-GB">en-GB/en-GB.com_efemerides.ini</language>
       <language tag="en-GB">en-GB/en-GB.com_efemerides.sys.ini</language>
     </languages>
