@@ -27,8 +27,8 @@
     <folder>language</folder>
   </files>
 
-  <languages folder="site/language">
-    <language tag="en-GB">en-GB/en-GB.com_efemerides.ini</language>
+  <languages>
+    <language tag="en-GB">site/language/en-GB/en-GB.com_efemerides.ini</language>
   </languages>
 
   <administration>
@@ -48,9 +48,9 @@
       <folder>language</folder>
     </files>
 
-    <languages folder="admin/language">
-      <language tag="en-GB">en-GB/en-GB.com_efemerides.ini</language>
-      <language tag="en-GB">en-GB/en-GB.com_efemerides.sys.ini</language>
+    <languages>
+      <language tag="en-GB">admin/language/en-GB/en-GB.com_efemerides.ini</language>
+      <language tag="en-GB">admin/language/en-GB/en-GB.com_efemerides.sys.ini</language>
     </languages>
   </administration>
 </extension>
