@@ -24,6 +24,7 @@
     <filename>controller.php</filename>
     <folder>views</folder>
     <folder>models</folder>
+    <folder>language</folder>
   </files>
 
   <languages folder="site/language">
@@ -44,6 +45,7 @@
       <folder>models</folder>
       <folder>controllers</folder>
       <folder>tables</folder>
+      <folder>language</folder>
     </files>
 
     <languages folder="admin/language">
